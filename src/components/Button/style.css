@@ -1,0 +1,16 @@
+.project-btn {
+  border: 1px solid #666666;
+  float: left;
+  padding: 5px 15px;
+  margin: 15px 5px;
+  cursor: pointer;
+  transition: .3s ease;
+  box-shadow: 0 1px 0 #eeeeee, inset 0 1px 0 #eeeeee;
+}
+
+.project-btn:hover {
+  background: rgba(255,255,255,0.4);
+  border-color: #3a9483;
+  color: #3a9483;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}

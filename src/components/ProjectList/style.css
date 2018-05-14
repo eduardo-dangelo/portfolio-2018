@@ -1,0 +1,36 @@
+.project-list-container {
+  background: #bbbbbb;
+  padding: 30px 15px 60px;
+}
+
+.list-type-container {
+  text-align: center;
+}
+
+.list-type {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.list-type-item {
+  padding: 5px 15px;
+  width: 50px;
+  cursor: pointer;
+  transition: .3s ease;
+  color: #999999;
+}
+
+.list-type-item:hover {
+  opacity: .7;
+  text-shadow: 0 2px 4px black;
+}
+
+.list-type-item:first-child {
+  border-right: 1px solid #999999;
+}
+
+.list-type-item.active {
+  color: #222222;
+}

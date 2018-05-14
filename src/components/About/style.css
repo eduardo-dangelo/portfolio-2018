@@ -1,0 +1,19 @@
+.about-container {
+  padding: 30px 15px;
+  background: #ded5ba;
+  color: #222222;
+}
+
+ul a {
+  color: #466aa8;
+  transition: .3s ease;
+  font-size: 1.3em;
+}
+
+ul a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: circle;
+}
