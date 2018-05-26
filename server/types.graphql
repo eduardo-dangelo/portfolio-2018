@@ -1,0 +1,56 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type Post @model {
+  id: ID! @isUnique    # read-only (managed by Graphcool)
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+  # author: User! @relation(name: "UserPosts")
+
+  title: String!
+  type: String!
+  description: String!
+  github: String!
+  demo: String!
+  imageUrl: String!
+  heroUrl: String!
+  status: String!
+}
+
+type Profile @model {
+  id: ID! @isUnique    # read-only (managed by Graphcool)
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+
+  profile: String!
+  skills: String!
+  contact: String!
+  email: String!
+}
+
+type Link @model {
+  id: ID! @isUnique    # read-only (managed by Graphcool)
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+
+  label: String!
+  url: String!
+  key: String!
+  status: String!
+}
+
+type Header @model {
+  id: ID! @isUnique    # read-only (managed by Graphcool)
+  createdAt: DateTime! # read-only (managed by Graphcool)
+  updatedAt: DateTime! # read-only (managed by Graphcool)
+
+  name: String!
+  activity: String!
+  backgroundUrl: String
+}
+
+type File @model {
+  id: ID! @isUnique
+  url: String
+}
+
