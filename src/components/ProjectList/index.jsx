@@ -91,10 +91,11 @@ export default ProjectList
 const projectList = [
   {
     id: '01',
-    name: 'Social Media App',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed lacinia nisl, sed volutpat nisi. Phasellus convallis purus blandit mattis luctus. Vivamus vehicula urna arcu, eget sodales dolor fermentum quis.',
+    name: 'Fight Game Menu',
+    description: 'A React application using Redux to simulate a fight game menu where you select characters and proceed to the fight',
     img: [
-      { url: '' }
+      { url: require('./img/fight_game_menu_01.png') },
+      { url: require('./img/fight_game_menu_02.png') }
     ],
     link: 'http://github.com/eduardo-dangelo'
   },

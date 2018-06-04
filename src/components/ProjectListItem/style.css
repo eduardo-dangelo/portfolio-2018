@@ -43,6 +43,11 @@
   background: rgba(0,0,0,0.4);
   transition: .3s ease;
   border: 1px solid white;
+  overflow: hidden;
+}
+
+.project-block-hero img {
+  height: 100%;
 }
 
 .project-block-hero:hover {
@@ -81,10 +86,12 @@
 }
 
 .project-image {
-  border: 2px solid gray;
-  height: 500px;
   border-radius: 3px;
   margin-bottom: 30px;
+}
+
+.project-image img {
+  width: 100%;
 }
 
 .project-title {

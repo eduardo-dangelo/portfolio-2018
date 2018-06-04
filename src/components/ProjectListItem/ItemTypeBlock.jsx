@@ -8,7 +8,9 @@ class ItemTypeBlock extends React.Component {
     return (
       <div>
         <div className={`project-block-item animated ${showDetails ? 'inactive' : 'fadeIn'}`} onClick={onSelectItem}>
-          <div className="project-block-hero"/>
+          <div className="project-block-hero">
+            <img src={item.img[0].url} alt="asd"/>
+          </div>
           <div className="project-block-label">{item.title}</div>
         </div>
         {isItemActive && (

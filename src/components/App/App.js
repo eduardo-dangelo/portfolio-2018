@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div ref="list" className="App" onScroll={this.handleScroll}>
         <Shell scrollShow={scrollShow}>
-          <LanguagesLogoList/>
+          {/*<LanguagesLogoList/>*/}
           <ProjectList/>
           <About/>
         </Shell>

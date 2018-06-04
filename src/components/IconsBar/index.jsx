@@ -5,10 +5,6 @@ import Icon from './Icon'
 
 const skillList = [
   {
-    name: 'Github',
-    logo: require('../imgs/logo_github.png')
-  },
-  {
     name: 'GraphQL',
     logo: require('../imgs/logo_graphql.png')
   },
@@ -27,6 +23,46 @@ const skillList = [
   {
     name: 'Webpack',
     logo: require('../imgs/logo_webpack.png')
+  },
+  {
+    name: 'React',
+    logo: require('../imgs/logo_react.png')
+  },
+  {
+    name: 'Node.js',
+    logo: require('../imgs/logo_nodejs.png')
+  },
+  {
+    name: 'Typescript',
+    logo: require('../imgs/logo_typescript.png')
+  },
+  {
+    name: 'Git',
+    logo: require('../imgs/logo_git.png')
+  },
+  {
+    name: 'Redux',
+    logo: require('../imgs/logo_redux.png')
+  },
+  {
+    name: 'HTML',
+    logo: require('../imgs/logo_html.png')
+  },
+  {
+    name: 'css',
+    logo: require('../imgs/logo_css.png')
+  },
+  {
+    name: 'Javascript',
+    logo: require('../imgs/logo_js.png')
+  },
+  {
+    name: 'Apollo',
+    logo: require('../imgs/logo_apollo.png')
+  },
+  {
+    name: 'JQuery',
+    logo: require('../imgs/logo_jquery.png')
   }
 ]
 
@@ -52,9 +88,6 @@ class LanguagesLogoList extends React.Component {
     return (
       <div>
         <div className="language-container">
-          {/*<div className={`language-header`}>*/}
-              {/*<h5>Languages List</h5>*/}
-          {/*</div>*/}
           <div className="container logo-list-container">
             {map(skillList, (item, key) => {
               return (
@@ -62,14 +95,6 @@ class LanguagesLogoList extends React.Component {
               )
             })}
           </div>
-          {languageName && (
-          <div className={`display-language-name animated fadeIn ${languageName && 'active'}`}>
-              {/*<div>*/}
-                {/*{languageName}*/}
-              {/*</div>*/}
-              Working eficient with {languageName}
-          </div>
-          )}
         </div>
       </div>
     )

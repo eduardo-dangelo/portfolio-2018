@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-2018",
   "version": "0.1.0",
-  "homepage": "https://eduardo-dangelo.github.io/portfolio",
+  "homepage": "https://eduardo-dangelo.github.io/portfolio-2018",
   "private": true,
   "dependencies": {
     "apollo-cache-inmemory": "^1.2.1",

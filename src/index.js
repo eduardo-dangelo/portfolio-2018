@@ -9,8 +9,8 @@ import ApolloClient from 'apollo-client';
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import registerServiceWorker from './registerServiceWorker'
-import { SubscriptionClient, addGraphQLSubscriptions } from 'subscriptions-transport-ws'
-import * as WebSocket from 'isomorphic-ws'
+import { SubscriptionClient } from 'subscriptions-transport-ws'
+import  WebSocket  from 'isomorphic-ws'
 
 // Simple API:        https://api.graph.cool/simple/v1/cjhfdhnwc1gyg0196jr0feqnf
 // Relay API:         https://api.graph.cool/relay/v1/cjhfdhnwc1gyg0196jr0feqnf
@@ -29,7 +29,6 @@ const client = new ApolloClient({
   dataIdFromObject: o => o.id,
   wsClient
 })
-
 
 ReactDOM.render(
   <ApolloProvider client={client}>

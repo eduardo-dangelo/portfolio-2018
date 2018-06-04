@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import FaLaptop from 'react-icons/lib/fa/envira'
+import FaLaptop from 'react-icons/lib/fa/home'
 
 class Header extends React.Component {
   state = {
